@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 * {
-    padding: 0;
+    padding: 0px;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +18,11 @@ body {
 .form-image {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    background-color: linear-gradient(to right, #13072E, #3F2182);
+    background-color: linear-gradient(to right, #fff, #3F2182);
     padding: 1rem;
+    margin-top: 0.9rem;
 }
 
 .form-image img {
@@ -43,7 +44,9 @@ body {
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #3F2182;
 }
 
 .input-group {
@@ -61,11 +64,12 @@ body {
 
 .input-box input {
     margin: 0.0rem 0;
-    padding: 0.8rem 6rem;
+    padding: 0.8rem 0.9rem;
     border: none;
     border-radius: 40px;
     box-shadow: 1px 1px 3px #000000f0;
     font-size: 0.9rem;   
+    width: 160%;
 }
 
 .input-box input:hover {
@@ -111,13 +115,14 @@ body {
 }
 
 .continue-button button {
-    width: 90%;
-    margin-top: 2rem;
+    width: 109%;
+    margin-top: 1rem;
     border: none;
     background-color: #3F2182;
     padding: 0.62rem;
-    border-radius: 80px;
+    border-radius: 150px;
     cursor: pointer;
+    padding: 0.2%;
 }
 
 .continue-button button:hover {
@@ -126,11 +131,11 @@ body {
 
 .continue-button button a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
     font-weight: bolder;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 a {
@@ -139,21 +144,34 @@ a {
 
 a:hover{
     text-decoration: none;
-    margin-top: 3rem;
 }
 
 a:hover {
     color: #3F2182; 
-    font-weight: bold;
-    margin-top: 3rem;
 }
 
-@media screen and (max-width: 1330px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (max-width: 1330px) {
     .form-image {
         display: none;
-    }
-    .container {
-        width: 50%;
     }
     .form {
         width: 100%;
@@ -161,8 +179,8 @@ a:hover {
 }
 
 @media screen and (max-width: 1064px) {
-    .container {
-        width: 90%;
+    .form {
+        width: 80%;
         height: auto;
     }
     .input-group {
@@ -185,4 +203,4 @@ a:hover {
     .gender-input {
         margin-top: 0.5rem;
     }
-}
+}*/
