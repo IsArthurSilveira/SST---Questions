@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    padding: 30px;
+    max-width: 20%;
+    border-radius: 15px;
+    transform: translateY(50%);
+    margin-left: 40%;
+}
+
+.formLogin{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+    align-items: center;
+}
+
+.input-container {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+
+}
+
+.input-container input {
+    padding-left: 100px;
+    padding: 8px;
+    border-radius: 30px;
+    border: solid #13072e 1px;
+}
+
+.input-container .icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+}
+
+.input-footer{
+    margin-top: 20px;
+    display: flex;
+    font-size: small;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.input-footer a{
+    color: #13072e;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #130466;
+    color: white;
+    width: 20vh;
+    border: none
+}
+
+.btn:hover{
+    background-color: #13072e;
+}
+
+a:hover{
+    color: #351385;
+}
+
+
+/* Estilos para iPhone SE */
+@media screen and (max-width: 320px) {
+    .container {
+        max-width: 90%;
+        margin-left: 5%;
+        padding: 10px;
+        transform: translateY(50%);
+    }
+
+    .input-container input {
+        padding-left: 50px;
+    }
+
+    .input-container .icon {
+        padding: 5px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Estilos para iPhone XR, iPhone 12 Pro, Pixel 5, Samsung Galaxy S8, Samsung Galaxy S20 Ultra */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    .container {
+        max-width: 80%;
+        margin-left: 10%;
+        padding: 20px;
+        transform: translateY(50%);
+    }
+
+    .input-container input {
+        padding-left: 60px;
+    }
+
+    .input-container .icon {
+        padding: 5px;
+    }
+
+    .input-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-footer a {
+        margin: 10px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Estilos para iPad Air, iPad Mini, Surface Pro 7, Surface Duo, Galaxy Fold, Samsung Galaxy A51/71 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 50%;
+        margin-left: 25%;
+        padding: 30px;
+        transform: translateY(50%);
+    }
+
+    .input-container input {
+        padding-left: 80px;
+    }
+
+    .input-container .icon {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Estilos para Nest Hub, Nest Hub Max */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 30%;
+        margin-left: 35%;
+        padding: 50px;
+        transform: translateY(20%);
+    }
+
+    .input-container input {
+        padding-left: 100px;
+    }
+
+    .input-container .icon {
+        padding: 20px;
+    }
+
+    button {
+        width: 20vh;
+    }
+}
