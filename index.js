@@ -14,6 +14,10 @@ app.get('/login', (req, res)=>{
     res.render('login')
 });
 
+app.get("/cadastro", (req, res)=>{
+    res.render('cadastro')
+});
+
 app.listen(3000,function(){
     console.log("Servidor rodando na url http://localhost:3000")
 });
