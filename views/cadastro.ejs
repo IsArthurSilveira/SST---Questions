@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="../public/css/cadastro.css">
 </head>
 <body>
-    
+
     </div>
         <div class="form-image">
             <img src="../public/images/logo.png">
         </div>
    
         <div class="form">
-            <form action="#">
+            <form method="post" action="/cadastrar">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre-se</h1>
@@ -23,39 +23,33 @@
 
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="Username"></label>
-                        <input id="name" type="text" name="name" placeholder="Username" required>
+                        <label for="nome"></label>
+                        <input id="nome" type="text" name="nome" placeholder="Nome" required>
                     </div>
                     <div class="input-box">
-                        <label for="E-mail"></label>
+                        <label for="email"></label>
                         <input id="email" type="email" name="email" placeholder="E-mail" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="Password"></label>
-                        <input id="password" type="password" name="password" placeholder="Password" required>
-                    </div>
-
-
-                    <div class="input-box">
-                        <label for="Confirm Password"></label>
-                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Confirm Password" required>
+                        <label for="senha"></label>
+                        <input id="senha" type="password" name="senha" placeholder="Password" required>
                     </div>
                     
                     <div class="form-check">
                         <input class="input-seleção" type="checkbox" value="" id="flexCheckDefault">
                         <label class="input-label" for="flexCheckDefault">
-                          Remenber Password
+                          Lembrar Senha
                         </label>
                     </div>
                 </div>
             
                 <div class="continue-button">
-                    <button><a href="#">Sign Up</a> </button>
+                    <button type="submit">Cadastrar</button>
                 </div>
             <br>
                <center>
-                <a href="/SST---Questions/views/indexlanding.ejs">Already Have Account? Sign In</a>
+                <a href="/login">Ja tem uma conta ? Faça login</a>
               </center>
 
             </form>
