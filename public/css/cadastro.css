@@ -44,7 +44,7 @@ body {
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
-    font-size: 1.7rem;
+    font-size: 1rem;
     font-weight: bolder;
     color: #3F2182;
 }
@@ -124,32 +124,24 @@ body {
     cursor: pointer;
     padding: 0.2%;
 }
-
-.continue-button button:hover {
-    background-color: #3F2182;
+button:hover {
+    background-color: #4073f5;
 }
 
-.continue-button button a {
+.continue-button button{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
     font-weight: bolder;
     padding-right: 20px;
-}
+ 
 
-a {
-    color: #007bff;
 }
 
 a:hover{
-    text-decoration: none;
+    color:#4073f5;
 }
-
-a:hover {
-    color: #3F2182; 
-}
-
 
 
 

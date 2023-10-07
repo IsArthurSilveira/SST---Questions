@@ -9,18 +9,18 @@
 <body style="background-image: linear-gradient(to right,#13072e,#3f2182);">
     
     <div class="container">
-        <form class="formLogin">
+        <form class="formLogin" method="post" action="/login">
             <img src="../public/images/logologin.png">
             <h1 style="color: #370466;margin-top: 20px;">Login</h1>
 
             <div class="input-container">
                 <img src="../public/images/iconuser.png" class="icon">
-                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email" name="email">
             </div>
 
             <div class="input-container">
                 <img src="../public/images/iconpassword.png" class="icon">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" name="senha">
             </div>
 
             <div class="input-footer">
@@ -35,6 +35,27 @@
            
         </form>
     </div>
+
+    <script>
+      
+        const formLogin = document.querySelector('formLogin');
+        formLogin.addEventListener('submit', async (event) => {
+          event.preventDefault();
+          const formData = new FormData(formLogin);
+          const response = await fetch('/login', {
+            method: 'POST',
+            body: formData
+          });
+          const data = await response.json();
+          if (response.ok) {
+            alert(data.mensagem);
+          } else {
+            alert(data.mensagem);
+          }
+        });
+
+
+      </script>
 
 </body>
 </html>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title> Página de Cadastro</title>
     <link rel="stylesheet" href="../public/css/cadastro.css">
 </head>
 <body>
@@ -33,7 +33,8 @@
 
                     <div class="input-box">
                         <label for="senha"></label>
-                        <input id="senha" type="password" name="senha" placeholder="Password" required>
+                        <input id="senha" type="password" name="senha" placeholder="Senha" required pattern="(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        oninvalid="this.setCustomValidity('A senha deve ter pelo menos 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial.')">
                     </div>
                     
                     <div class="form-check">
@@ -49,7 +50,7 @@
                 </div>
             <br>
                <center>
-                <a href="/login">Ja tem uma conta ? Faça login</a>
+                <a href="/login" style="color: #13072e; text-decoration: none;">Ja tem uma conta ? Faça login</a>
               </center>
 
             </form>

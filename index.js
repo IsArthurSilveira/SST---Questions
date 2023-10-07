@@ -5,6 +5,7 @@ const path = require('path');
 const connection = require('./database/database');
 const bodyParser = require('body-parser');
 const Usuarios = require("./database/usuarios");
+const bcrypt = require('bcrypt');
 
 app.use(bodyParser.urlencoded({extended: false}));
 
@@ -28,9 +29,26 @@ app.get('/home', (req, res)=>{
     res.render('landing')
 });
 
-app.get('/login', (req, res)=>{
-    res.render('login')
-});
+app.post('/login', async (req, res) => {
+    const { email, senha } = req.body;
+  
+    const usuario = await Usuarios.findOne({ where: { email } });
+  
+    if (!usuario) {
+      return res.status(400).json({ mensagem: 'Usuário não encontrado' });
+    }
+  
+    const senhaValida = await bcrypt.compare(senha, usuario.senha);
+  
+    if (!senhaValida) {
+      return res.status(400).json({ mensagem: 'Senha incorreta' });
+    }
+  
+    res.json({ mensagem: 'Login bem-sucedido' });
+  });
+
+  app.get("/login", (req, res)=>{
+    res.render('login')})
 
 app.get("/Cadastro", (req, res)=>{
     res.render('cadastro')
