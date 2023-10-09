@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Página de Cadastro</title>
     <link rel="stylesheet" href="../public/css/cadastro.css">
+    <link rel="icon" href="../public/images/iconuser.png" type="image/png">
 </head>
 <body>
 
@@ -24,23 +25,20 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="nome"></label>
-                        <input id="nome" type="text" name="nome" placeholder="Nome" required>
+                        <input id="nome" type="text" name="nome" placeholder="  Nome" required>
                     </div>
                     <div class="input-box">
                         <label for="email"></label>
-                        <input id="email" type="email" name="email" placeholder="E-mail" required>
+                        <input id="email" type="email" name="email" placeholder="  E-mail" required>
                     </div>
-
                     <div class="input-box">
                         <label for="senha"></label>
-                        <input id="senha" type="password" name="senha" placeholder="Senha" required pattern="(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        oninvalid="this.setCustomValidity('A senha deve ter pelo menos 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial.')">
-                    </div>
-                    
+                        <input id="senha" type="password" name="senha" placeholder="  Senha" required>
+                    </div>               
                     <div class="form-check">
                         <input class="input-seleção" type="checkbox" value="" id="flexCheckDefault">
                         <label class="input-label" for="flexCheckDefault">
-                          Lembrar Senha
+                        Lembrar Senha
                         </label>
                     </div>
                 </div>
@@ -48,7 +46,9 @@
                 <div class="continue-button">
                     <button type="submit">Cadastrar</button>
                 </div>
+
             <br>
+            
                <center>
                 <a href="/login" style="color: #13072e; text-decoration: none;">Ja tem uma conta ? Faça login</a>
               </center>

@@ -6,12 +6,12 @@
     <title>Página de Login</title>
     <link rel="stylesheet" href="../public/css/login.css">
 </head>
-<body style="background-image: linear-gradient(to right,#13072e,#3f2182);">
+<body style="background-color: #13072e;">
     
     <div class="container">
         <form class="formLogin" method="post" action="/login">
             <img src="../public/images/logologin.png">
-            <h1 style="color: #370466;margin-top: 20px;">Login</h1>
+            <h1 style="color: #370466;margin-top: 30px;font-family: 'Gotham',sans-serif;">Login</h1>
 
             <div class="input-container">
                 <img src="../public/images/iconuser.png" class="icon">
@@ -32,12 +32,15 @@
             <div class="loginbuttao">
                 <input class="btn" type="submit" value="Entrar"></input>
             </div>
-           
+            <div class="account">
+              <p>Ainda não tem uma conta?<a href="/cadastro">Registre-se</a></p>
+            </div>
         </form>
+
     </div>
 
     <script>
-      
+
         const formLogin = document.querySelector('formLogin');
         formLogin.addEventListener('submit', async (event) => {
           event.preventDefault();

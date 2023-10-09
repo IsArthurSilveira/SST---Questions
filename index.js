@@ -68,6 +68,7 @@ app.post("/cadastrar", (req, res)=>{
     })
 });
 
+
 //Iniciando o servidor
 app.listen(3000,function(){
     console.log("Servidor rodando na url http://localhost:3000")

@@ -1,13 +1,23 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url(../fonte/Gotham-Bold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Light';
+    src: url(../fonte/Gotham-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    background-color: white;
-    padding: 30px;
-    max-width: 20%;
-    border-radius: 15px;
-    transform: translateY(50%);
+    background-color: #fff4f4;
+    border-radius: 80px;
     margin-left: 40%;
 }
 
@@ -22,15 +32,22 @@
     margin-top: 20px;
     position: relative;
     display: flex;
+    margin-bottom: 10px;
 
 }
 
 .input-container input {
     padding-left: 100px;
-    padding: 8px;
-    border-radius: 30px;
-    border: solid #13072e 1px;
+    padding: 15px;
+    border-radius: 20px;
+    border-color: #3e2281;
+    background-color: #f6f6f6f6;
 }
+
+.input-container input:focus {
+    border-color: #13072e;
+}  
+
 
 .input-container .icon {
     position: absolute;
@@ -41,21 +58,26 @@
 }
 
 .input-footer{
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     display: flex;
     font-size: small;
     justify-content: space-between;
     white-space: nowrap;
+    font-family: "Gotham Light",sans-serif;
+    color: #68529c;
 }
 .input-footer a{
-    color: #13072e;
     text-decoration: none;
     margin-left: 40px;
 }
 
 .btn{
+    margin-bottom: 20px;
     margin-top: 20px;
     padding: 10px;
+    padding-left: 90px;
+    padding-right: 130px;
     border-radius: 20px;
     background-color: #130466;
     color: white;
@@ -69,6 +91,18 @@
 
 a:hover{
     color: #351385;
+}
+
+.account{
+    text-decoration: none;
+    color: #68529c;
+    font-family: "Gotham Light",sans-serif;
+}
+.account a:hover{
+    color: #13072e;
+}
+.account a {
+    color: #68529c;
 }
 
 
@@ -151,9 +185,9 @@ a:hover{
 @media screen and (min-width: 1024px) {
     .container {
         max-width: 30%;
-        margin-left: 35%;
+        margin-left: 34%;
         padding: 50px;
-        transform: translateY(20%);
+        transform: translateY(5%);
     }
 
     .input-container input {
