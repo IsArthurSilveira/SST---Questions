@@ -38,3 +38,63 @@
     margin-right: 30px;
     border-radius: 20px;;
 }
+.body1{
+    background-image: linear-gradient(180deg, #13072e, #3f2182);
+    margin-top: 30px;
+    padding: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.imagembody1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.imagembody1 img {
+    margin-right: 10px;
+}
+
+.body1-body{
+    color:white;
+    font-family: "Gotham Light",sans-serif;
+}
+.body1-body p{
+   font-size: 25px;
+   margin-top: 100px;
+   text-align:center;
+   margin-right: 10px;
+}
+.primeiroa{
+    display: flex;
+    justify-content: center;
+}
+
+.tag1{
+    text-decoration: none;
+    color: white;
+    background-color: #5d4494;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.primeiroa2{
+    display: flex;
+    justify-content:start;
+    margin-top: 150px;
+}
+
+.tag2{
+    text-decoration: none;
+    color: #13072e;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 80px;
+    background-image: url('../images/AdobeStock_558272798_Preview.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
